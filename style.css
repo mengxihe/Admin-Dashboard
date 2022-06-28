@@ -82,3 +82,15 @@ table {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.notifications {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px
+}
