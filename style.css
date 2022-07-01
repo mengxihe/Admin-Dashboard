@@ -109,6 +109,9 @@ table {
     gap: 15px;
 }
 
+.projects .projectsTitle {
+    grid-column: 1/3;
+}
 .projects .card {
     background-color: white;
     height: 200px;
