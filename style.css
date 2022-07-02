@@ -29,7 +29,7 @@ body {
 	line-height: 1;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     /* height: 100vh; */
-    background-color: black;
+    background-color: rgb(0, 0, 0);
 }
 
 ol, ul {
@@ -66,29 +66,50 @@ table {
 
 .container div {
     padding: 8px;
-    /* font-size: 18px; */
     font-weight: bold;
     color: rgb(63, 255, 63);
 }
 
+.container a {
+    color: rgb(63, 255, 63);
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    
+}
 .sidebar {
     background-color: rgb(0, 0, 0);
     grid-row: 1/3;
-    /* display: flex; */
-    /* flex-direction: column; */
     gap: 40px;
     display: grid;
-    /* gap: 10px; */
     grid-template-rows: 1fr 3fr 2fr;
+    /* padding: 30px; */
+    margin: 30px 10px;
+}
+
+.topSidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.dashboard-logo {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+}
+.material-symbols-outlined {
+    /* vertical-align: middle; */
+    font-size: 32px;
+}
+.md-24 {
+    font-size: 24px;
 }
 
 .header {
     background-color: rgb(0, 0, 0);
     display: grid;
-    grid-template-columns: 0.75fr 0.5fr 3fr 1fr;
-    /* justify-self: center; */
-    /* align-self: center; */
-    /* height: 50px; */
+    grid-template-columns: 0.5fr 3fr 1fr;
+    margin: 30px 10px;
 }
 
 .header>* {
@@ -125,7 +146,7 @@ table {
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-column: 2/3;
-    background-color: rgb(19, 19, 19);
+    background-color: rgb(0, 0, 0);
     gap: 10px;
 }
 
@@ -136,14 +157,18 @@ table {
     grid-column: 1/2;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 15px;
+
 }
 
 
 .projects .card {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(19, 19, 19);
     height: 250px;
     padding: 25px;
-    /* border-radius: 10px; */
+    /* border-style: solid; */
+    border-left: 8px solid;
+    border-color: yellow;
+    border-radius: 5px;
 }
 
 .notifications {
@@ -156,9 +181,10 @@ table {
     /* grid-template-rows: repeat(3 1fr); */
     grid-column: 1/2;
     gap: 15px;
-    background-color: rgb(0, 0, 0);
-    /* border-radius: 10px; */
+    background-color: rgb(19, 19, 19);
+    border-radius: 5px;
     margin-top: 8px;
+
 }
 
 .announce-content {
@@ -172,17 +198,21 @@ table {
     font-size: 12px;
     font-weight: lighter;
 }
+
+
+.trendingTitle {
+    margin-top: 10px;
+}
+
 .trending {
     display: grid;
     grid-column: 1/2;
     gap: 15px;
+    background-color: rgb(19, 19, 19);
+    border-radius: 5px;
 }
 
-.t-content {
-    background-color: rgb(0, 0, 0);
-    /* border-radius: 10px; */
-    
-}
+
 
 
 .footer {
