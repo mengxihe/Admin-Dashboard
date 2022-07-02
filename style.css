@@ -75,7 +75,7 @@ table {
     display: flex;
     align-items: center;
     text-decoration: none;
-    
+    gap: 8px;
 }
 .sidebar {
     background-color: rgb(0, 0, 0);
@@ -87,11 +87,14 @@ table {
     margin: 30px 10px;
 }
 
-.topSidebar {
+.topSidebar,
+.bottomSidebar {
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
+
+
 .dashboard-logo {
     font-size: 24px;
     display: flex;
